@@ -2,7 +2,10 @@
 
 body {
   margin: 0;
-  background: rgb(233, 233, 233);
+}
+
+section {
+  padding: 124px 0;
 }
 
 article {
@@ -10,10 +13,24 @@ article {
   max-width: 1080px;
 }
 
+/* fonts */
+
 h1 {
   margin: 0;
   font: normal normal bold 82px/100px Montserrat;
   text-transform: lowercase;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: Montserrat;
+  text-align: center;
+  margin: 0 auto 58px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #fa382f;
+  width: max-content;
+  padding: 5px 14px;
 }
 
 h6 {
@@ -26,6 +43,21 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* style */
+
+.dark {
+  background: #f4f4f4;
+}
+
+.light {
+  background: #fff;
+}
+
+.center {
+  /* margin: auto; */
+  text-align: center;
 }
 
 /*********************** HEADER ***********************/
@@ -43,6 +75,7 @@ header {
     url(./assets/pencils.jpg);
   max-width: 100%;
   background-position: bottom right;
+  margin-bottom: 4px;
 }
 
 .header-container {
@@ -98,5 +131,11 @@ header {
 }
 
 /*********************** MAIN ***********************/
+
+.intro-tech-text-style {
+  font-family: Montserrat;
+  font-size: 30px;
+  line-height: 50px;
+}
 
 /*********************** FOOTER ***********************/

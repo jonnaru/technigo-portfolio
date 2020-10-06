@@ -319,4 +319,11 @@ header {
   padding-left: 54px;
 }
 
+.strong-link {
+  font-weight: 500;
+}
+
+.under-lined {
+  text-decoration: underline;
+}
 /*********************** FOOTER ***********************/

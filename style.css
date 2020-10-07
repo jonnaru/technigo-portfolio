@@ -105,6 +105,12 @@ p {
   margin-bottom: 14px;
 }
 
+.tech-text-style {
+  font-family: Montserrat;
+  font-size: 30px;
+  line-height: 50px;
+}
+
 /* STYLE */
 
 .dark {
@@ -119,12 +125,16 @@ p {
   text-align: center;
 }
 
-.highlight-font {
+.highlight {
   color: var(--color-highlight);
 }
 
 .strong {
   font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 /* MAIN CARDS */
@@ -184,9 +194,9 @@ header {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(./assets/pencils.jpg);
+    url(./assets/bg-img.jpg);
   max-width: 100%;
-  background-position: bottom right;
+  background-position: top;
   margin-bottom: 4px;
 }
 
@@ -202,11 +212,11 @@ header {
   justify-content: space-between;
 }
 
-.icon-container {
+.icon-header-container {
   margin-top: 100px;
 }
 
-.icon {
+.icon-header {
   display: inline-flex;
   justify-content: center;
   margin: 0 6px 0;
@@ -214,10 +224,6 @@ header {
   height: 80px;
   width: 80px;
   border-radius: 50%;
-}
-
-.icon-img {
-  width: 40px;
 }
 
 .header-text-box {
@@ -240,6 +246,7 @@ header {
   border-radius: 50%;
   border: 4px solid #fff;
   margin-bottom: -30px;
+  filter: grayscale(20%);
 }
 
 /*********************** MAIN ***********************/
@@ -268,14 +275,6 @@ header {
   border-radius: 50%;
   background: var(--color-highlight);
   margin-left: -3px;
-}
-
-/* text */
-
-.intro-tech-text-style {
-  font-family: Montserrat;
-  font-size: 30px;
-  line-height: 50px;
 }
 
 /*** SECTION 3 - projects ***/
@@ -328,6 +327,10 @@ header {
 
 /*** SECTION 4 - thoughts ***/
 
+.brain-img {
+  object-position: 0 -26px;
+}
+
 .under-lined {
   text-decoration: underline;
 }
@@ -347,7 +350,42 @@ ul {
   flex-wrap: wrap;
 }
 
-.skills-list {
+/*** SECTION 6 - for more ***/
+
+.for-more-container {
+  display: flex;
+  justify-content: center;
+}
+
+.more-icon-link {
+  width: 160px;
+  margin: 10px 40px;
+}
+
+.icon-more {
+  display: inline-flex;
+  justify-content: center;
+  border-width: 5px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 35px;
+  border: 4px Solid black;
+  border-radius: 50%;
 }
 
 /*********************** FOOTER ***********************/
+
+.bg-footer {
+  background: #072bce;
+}
+
+.footer-heading {
+  margin-top: 0px;
+  color: #fff;
+}
+
+.footer-paragraph {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 40px;
+}

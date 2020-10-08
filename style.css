@@ -250,8 +250,12 @@ header {
   font-weight: 500;
 }
 
-.titel {
+.title {
   font: normal normal bold 50px/90px Montserrat;
+}
+
+.title-mobile {
+  display: none;
 }
 
 .profile-img {
@@ -352,6 +356,18 @@ header {
 
 .under-lined {
   text-decoration: underline;
+}
+
+.my-thoughts-tablet {
+  display: none;
+}
+
+.my-thoughts-mobile {
+  display: none;
+}
+
+.second-thought-mobile {
+  display: none;
 }
 
 /*** SECTION 5 - skills ***/
@@ -466,7 +482,6 @@ ul {
 
   header {
     max-height: 460px;
-    /* width: 100%; */
   }
 
   .header {
@@ -482,7 +497,7 @@ ul {
     z-index: 20;
   }
 
-  .titel {
+  .title {
     font: normal normal bold 30px/60px Montserrat;
   }
 
@@ -513,9 +528,251 @@ ul {
     padding-left: 0;
   }
 
+  /* section 4 - my thought */
+
+  .my-thoughts-tablet {
+    display: block;
+  }
+
+  .my-thoughts-desktop {
+    display: none;
+  }
+
+  .my-thoughts-mobile {
+    display: none;
+  }
+
   /* footer */
 
   .footer-paragraph {
     color: var(--color-footer-font);
+  }
+}
+
+/*** MOBILE ***/
+@media (max-width: 667px) {
+  /* global */
+
+  section {
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  article {
+    width: 82%;
+  }
+
+  h1 {
+    font: normal normal normal 40px/49px Montserrat;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    padding: 4px 10px;
+    letter-spacing: 1px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  h4 {
+    margin-bottom: 40px;
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
+
+  h5 {
+    margin-top: -14px;
+    font-size: 21px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+
+  h6 {
+    font: normal normal normal 13px/26px Roboto;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+
+  .main-paragraph {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  .tech-text-style {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  /* main cards */
+
+  .main-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-card {
+    margin-bottom: 50px;
+  }
+
+  .main-card-link {
+    width: 100%;
+  }
+
+  .main-img-container {
+    margin-bottom: 22px;
+  }
+
+  /* header */
+
+  header {
+    min-height: 300px;
+    max-height: 508px;
+  }
+
+  .header {
+    height: 492px;
+  }
+
+  .header-container {
+    height: 290px;
+  }
+
+  .title {
+    font: normal normal normal 24px/40px Montserrat;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .title-mobile {
+    display: block;
+  }
+
+  .title-desktop {
+    display: none;
+  }
+
+  .icon-header-container {
+    margin-top: 82px;
+  }
+
+  .icon-header {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 2px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .small-icon {
+    width: 18px;
+  }
+
+  .small-icon-sandbox {
+    width: 24px;
+  }
+
+  .profile-img {
+    height: 162px;
+    width: 162px;
+  }
+
+  /* section 1 + 2 - (intro) & (tech) */
+
+  /* decoration */
+
+  .decoration-wrapper {
+    width: 66px;
+    height: 28px;
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+  }
+
+  .line {
+    width: 46px;
+    height: 3px;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* section 3 - projects */
+
+  .tag {
+    font-size: 9px;
+    line-height: 26px;
+    padding: 5px 10px;
+    /* margin: 0 1px; */
+  }
+
+  .more-thoughts,
+  .other-projects {
+    margin-top: 32px;
+  }
+
+  /* section 4 - my thoughts */
+
+  .brain-img {
+    object-position: 0 -0px;
+  }
+
+  .my-thoughts-tablet {
+    display: none;
+  }
+
+  .my-thoughts-mobile {
+    display: block;
+  }
+
+  .second-thought-mobile {
+    display: block;
+  }
+
+  .second-thought-desktop {
+    display: none;
+  }
+
+  /* section 6 - for more */
+
+  .for-more-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .more-icon-link {
+    width: 70px;
+    margin: 0 20px;
+  }
+
+  .icon {
+    width: 22px;
+  }
+
+  .icon-sandbox {
+    width: 30px;
+  }
+
+  .icon-more {
+    display: inline-flex;
+    justify-content: center;
+    border-width: 3px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 6px;
+    border: 4px Solid var(--color-more-circles);
+    border-radius: 50%;
+  }
+
+  .for-more-text {
+    font-size: 11px;
+    font-weight: 600;
   }
 }

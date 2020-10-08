@@ -212,6 +212,8 @@ header {
   max-width: 100%;
   background-position: top;
   margin-bottom: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
@@ -482,6 +484,8 @@ ul {
 
   header {
     max-height: 460px;
+    background-size: cover;
+    background-size: auto;
   }
 
   .header {

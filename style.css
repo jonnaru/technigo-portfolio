@@ -2,25 +2,26 @@
 
 :root {
   /* background colors */
-  --color-bg-dark: #f4f4f4;
+  --color-bg-dark: #dcdcdc;
   --color-bg-light: #fff;
-  --color-bg-footer: #072bce;
+  --color-bg-intro-footer: #fff0f5;
 
   /* font colors */
   --color-header-text-box: #fff;
   --color-h2-font: #fff;
   --color-main-font: #000;
-  --color-highlight: #fa382f;
-  --color-card-image-font: #fff; /* font color on card images */
-  --color-footer-font: #fff;
+  --color-highlight: #0000ff;
+  --color-highlight-darker: #333333;
+  --color-card-image-font: #000; /* font color on card images */
+  --color-footer-font: #000;
 
   /* other colors */
-  --color-over-img: #000; /* image filter color */
+  --color-over-img: #0000ff; /* image filter color */
   --color-header-circles: #fff; /* circle borders header */
   --color-more-circles: #000; /* circle borders for more */
 
   /* tags */
-  --color-bg-tag: #fddfe7;
+  --color-bg-tag: #fff;
   --color-font-tag: #000000;
 }
 
@@ -75,16 +76,19 @@ h3 {
   font-size: 28px;
   font-family: Montserrat;
   font-weight: 700;
-  color: var(--color-card-image-font);
+  color: var(--color-highlight);
   text-transform: uppercase;
   letter-spacing: 1px;
+  background: rgba(255, 255, 255, 1);
+  padding: 5px 15px;
+  transition: 0.1s;
 }
 
 h4 {
   margin: 50px 0;
   font-size: 38px;
   font-family: Montserrat;
-  color: var(--color-highlight);
+  color: var(--color-highlight-darker);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -143,6 +147,10 @@ p {
   color: var(--color-highlight);
 }
 
+.highlight-darker {
+  color: var(--color-highlight-darker);
+}
+
 .strong {
   font-weight: 500;
 }
@@ -161,6 +169,7 @@ p {
 
 .main-card-link {
   width: 48%;
+  transition: 1s;
 }
 
 .main-card {
@@ -175,25 +184,47 @@ p {
   margin-bottom: 30px;
 }
 
+/*
 .img-color {
   position: absolute;
   background: var(--color-over-img);
-  mix-blend-mode: darken;
-  opacity: 0.5;
+  mix-blend-mode: screen;
+  opacity: 0.8;
   z-index: 5;
 
-  /* makes it fit to different spans/divs */
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+  transition: 0.1s;
 }
+*/
 
 .main-img {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  filter: grayscale(50%);
+  /* filter: grayscale(100%); */
+}
+
+/* hover main cards */
+
+.main-card-link:hover h3 {
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.main-card-link:hover .img-color {
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.main-card-link:hover .main-img {
+  filter: none;
+}
+
+.main-card-link:hover .underline {
+  text-decoration: underline;
 }
 
 /*********************** HEADER ***********************/
@@ -278,6 +309,10 @@ header {
 
 /*** SECTION 1 + 2 - (intro) & (tech) ***/
 
+.intro {
+  background: var(--color-bg-intro-footer);
+}
+
 /* decoration */
 
 .decoration-wrapper {
@@ -343,11 +378,24 @@ header {
   height: 100%;
   width: 300px;
   object-fit: cover;
-  filter: grayscale(50%);
+  /* filter: grayscale(100%); */
 }
 
 .other-projects-text-container {
   padding-left: 54px;
+}
+
+.other-projects-container:hover .img-color {
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.other-projects-container:hover .other-projects-img {
+  filter: none;
+}
+
+.other-projects-container:hover .underline {
+  text-decoration: underline;
 }
 
 /*** SECTION 4 - thoughts ***/
@@ -410,10 +458,14 @@ ul {
   border-radius: 50%;
 }
 
+.more-icon-link:hover .underline {
+  text-decoration: underline;
+}
+
 /*********************** FOOTER ***********************/
 
 .bg-footer {
-  background: var(--color-bg-footer);
+  background: var(--color-bg-intro-footer);
 }
 
 .footer-heading {
@@ -425,6 +477,10 @@ ul {
   color: var(--color-footer-font);
   font-weight: 300;
   margin-bottom: 40px;
+}
+
+a:hover .underline {
+  text-decoration: underline;
 }
 
 /***************************************************/
@@ -450,6 +506,10 @@ ul {
 
   h2 {
     font-size: 40px;
+  }
+
+  h3 {
+    color: var(--color-highlight);
   }
 
   h4 {
@@ -478,6 +538,14 @@ ul {
 
   .main-img {
     height: 220px;
+    filter: none;
+  }
+
+  .img-color {
+    position: absolute;
+    background: unset;
+    mix-blend-mode: unset;
+    opacity: 0.8;
   }
 
   /* header */
@@ -640,7 +708,7 @@ ul {
   }
 
   .header {
-    height: 492px;
+    height: 500px;
   }
 
   .header-container {

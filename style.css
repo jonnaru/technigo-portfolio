@@ -184,21 +184,18 @@ p {
   margin-bottom: 30px;
 }
 
-/*
 .img-color {
   position: absolute;
-  background: var(--color-over-img);
-  mix-blend-mode: screen;
-  opacity: 0.8;
+  background: white;
+  /* mix-blend-mode: screen; */
+  opacity: 0.2;
   z-index: 5;
-
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   transition: 0.1s;
 }
-*/
 
 .main-img {
   width: 100%;

@@ -1,5 +1,19 @@
 /*********************** GLOBAL ***********************/
 
+/* scroll bar */
+
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-bg-light);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-highlight);
+}
+
 :root {
   /* background colors */
   --color-bg-dark: #dcdcdc;
@@ -39,7 +53,8 @@ section {
 
 article {
   margin: auto;
-  width: 1080px;
+  max-width: 1080px;
+  width: 90%;
 }
 
 a {

@@ -16,7 +16,7 @@
   --color-footer-font: #000;
 
   /* other colors */
-  --color-over-img: #0000ff; /* image filter color */
+  --color-over-img: #ffffff; /* image filter color */
   --color-header-circles: #fff; /* circle borders header */
   --color-more-circles: #000; /* circle borders for more */
 
@@ -48,6 +48,11 @@ a {
 
 a:visited {
   color: inherit;
+}
+
+a:focus {
+  outline: 2px solid var(--color-highlight);
+  outline-offset: 4px;
 }
 
 /* FONTS */
@@ -186,8 +191,7 @@ p {
 
 .img-color {
   position: absolute;
-  background: white;
-  /* mix-blend-mode: screen; */
+  background: var(--color-over-img);
   opacity: 0.2;
   z-index: 5;
   left: 0;
@@ -358,6 +362,10 @@ header {
   background: var(--color-bg-tag);
   padding: 5px 18px;
   margin: 0 1px;
+}
+
+.margin-top {
+  margin-top: 10px;
 }
 
 /* other projects */

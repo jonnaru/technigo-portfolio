@@ -2,4 +2,6 @@
 
 A technical portfolio created after a given design in pure HTML5 and CSS3. Paying attention to accessibility, validate the code and cross browser testing.
 
+## view it live
+
 https://jonna.work/

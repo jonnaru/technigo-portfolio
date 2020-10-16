@@ -401,6 +401,7 @@ header {
   height: 100%;
   width: 300px;
   object-fit: cover;
+  object-position: top;
   /* filter: grayscale(100%); */
 }
 

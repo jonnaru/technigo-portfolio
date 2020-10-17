@@ -45,6 +45,7 @@ body {
 
 *::selection {
   background: var(--color-highlight);
+  color: #fff;
 }
 
 section {

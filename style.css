@@ -249,7 +249,7 @@ header {
   margin: auto;
   height: 100vh;
   min-height: 600px;
-  max-height: 800px;
+  max-height: 700px;
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.2),
@@ -265,11 +265,11 @@ header {
 
 .header {
   position: relative;
-  height: 800px;
+  height: 700px;
 }
 
 .header-container {
-  height: 600px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -402,7 +402,6 @@ header {
   width: 300px;
   object-fit: cover;
   object-position: top;
-  /* filter: grayscale(100%); */
 }
 
 .other-projects-text-container {

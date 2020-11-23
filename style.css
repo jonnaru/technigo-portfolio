@@ -18,11 +18,11 @@ body::-webkit-scrollbar-thumb {
   /* background colors */
   --color-bg-dark: #dcdcdc;
   --color-bg-light: #fff;
-  --color-bg-intro-footer: #fff0f5;
+  --color-bg-intro-footer: #fff;
 
   /* font colors */
   --color-header-text-box: #fff;
-  --color-h2-font: #fff;
+  --color-h2-font: #333333;
   --color-main-font: #000;
   --color-highlight: #0000ff;
   --color-highlight-darker: #333333;
@@ -87,7 +87,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-h2-font);
-  background: var(--color-highlight);
+  /* background: var(--color-highlight); */
   width: max-content;
   padding: 5px 14px;
 }
@@ -154,6 +154,11 @@ p {
 
 .dark {
   background: var(--color-bg-dark);
+}
+
+.dark-heading {
+  background: var(--color-h2-font);
+  color: white;
 }
 
 .light {
@@ -332,6 +337,7 @@ header {
 
 .intro {
   background: var(--color-bg-intro-footer);
+  border-bottom: 2px solid #dcdcdc;
 }
 
 /* decoration */
@@ -497,6 +503,7 @@ ul {
 
 .bg-footer {
   background: var(--color-bg-intro-footer);
+  border-top: 2px solid var(--color-highlight-darker);
 }
 
 .footer-heading {

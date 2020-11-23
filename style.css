@@ -163,6 +163,7 @@ p {
 
 .light {
   background: var(--color-bg-light);
+  color: blue;
 }
 
 .center {

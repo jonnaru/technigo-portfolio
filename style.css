@@ -11,6 +11,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
+  border-radius: 50px;
   background: var(--color-highlight);
 }
 
